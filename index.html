@@ -15,45 +15,70 @@
             <h1 id="title">Myeza Properties Survey.</h1>
             <p id="description">We welcome your feedback to better our services. <br> Please fill-out the Survey below:</p>
 
-            <form id="form-survey" action="">
+            <form id="survey-form" action="">
+                <div class="txtb">
+                <label for="name" id="name-label">Name :</label>
+                <input type="name" id="name" placeholder=" John" required>
+                </div>
+                
+                
+                <div class="txtb">
+                <label for="surname" id="surname-label">Surname :</label>
+                <input type="surname" id="surname-" placeholder=" Smith" required>
+                </div>
+                
+                
+                <div class="txtb">
+                <label for="number" id="number-label">Enter your age :</label>
+                <input type="number" id="number" required placeholder=" Must be older than 18." min="18"max="100" title="Numbers only Please.">
+                </div>
+                
+                
+                <div class="txtb">
+                    <label for="email" id="email-label">Enter your email :</label>
+                    <input type="email" id="email" required placeholder=" abc@company.com">
+                </div>
+                
+               
+                <fieldset>
+                    <legend>Select Gender</legend>
+                    <input type="radio" name="gender" value="Male" >Male
+                    <input type="radio" name="gender" value="Male">Female
+                </fieldset>
+                
 
-                <label for="name">Name :</label><br>
-                <input type="name" id="name" placeholder="John" required>
-                <br>
-                <label for="surname">Surname :</label><br>
-                <input type="surname" id="surname" placeholder="Smith" required>
-                <br>
-                <label for="number">Enter cellphone number :</label><br>
-                <input type="number" id="number" required placeholder="012 456 7894" max="10">
-                <br>
-                <label for="email">Enter your email :</label><br>
-                <input type="email" id="email" required placeholder="abc@company.com">
-                <br>
-                <label for="gender">Select your gender.</label><br>
-                <input type="radio" name="gender" value="Male">Male <br>
-                <input type="radio" name="gender" value="Male">Female <br>
-                <label for="rooms">Preferred number of rooms in a house :</label><br>
-                <select name="rooms" id="dropdown">
-                    <option value="1 bedroom">1 bedroom</option>
-                    <option value="1 bedroom">1 bedroom</option>
-                    <option value="1 bedroom">1 bedroom</option>
-                    <option value="1 bedroom">1 bedroom</option>
-                    <option value="1 bedroom">1 bedroom</option>
-                </select><br>
-                <label for="province">Which provinces would you like to see Myeza Properties building houses in?</label><br>
-                <input type="checkbox" name="province" value="Mpumalanga">Mpumalanga <br>
-                <input type="checkbox" name="province" value="Mpumalanga">Mpumalanga <br>
-                <input type="checkbox" name="province" value="Mpumalanga">Mpumalanga <br>
-                <input type="checkbox" name="province" value="Mpumalanga">Mpumalanga <br>
-                <input type="checkbox" name="province" value="Mpumalanga">Mpumalanga <br>
-                <label for="message">Enter your message here.</label><br>
-                <textarea name="message"  cols="20" rows="5" placeholder="Write your message here."></textarea>
-                <br>
-                <input type="submit" value="Submit">
-
-
-
-
+                <div class="txtb">
+                    <label for="rooms">Preferred number of rooms in a house :</label>
+                    <select name="rooms" id="dropdown">
+                        <option value="choose">-- Choose Number of bedrooms --</option>
+                        <option value="1 bedroom">1 bedroom</option>
+                        <option value="2 bedroom">2 bedrooms</option>
+                        <option value="3 bedroom">3 bedrooms</option>
+                        <option value="4 bedroom">4 bedrooms</option>
+                        <option value="5 bedroom">5 bedrooms</option>
+                    </select>
+                </div>
+                
+                <fieldset>
+                    <legend>In which province are you located?</legend>
+                    <input type="checkbox" name="province" value="Mpumalanga">Mpumalanga 
+                    <input type="checkbox" name="province" value="Mpumalanga">Limpopo 
+                    <input type="checkbox" name="province" value="Mpumalanga">Gauteng 
+                    <input type="checkbox" name="province" value="Mpumalanga">North-West 
+                    <input type="checkbox" name="province" value="Mpumalanga">Northen Cape
+                    <input type="checkbox" name="province" value="Mpumalanga">Eastern Cape
+                    <input type="checkbox" name="province" value="Mpumalanga">Western Cape
+                    <input type="checkbox" name="province" value="Mpumalanga">Free State
+                    <input type="checkbox" name="province" value="Mpumalanga">KwaZulu-Natal
+                </fieldset>
+        
+                <div class="txtb">
+                    <label for="message">Enter your message here.</label>
+                    <textarea name="message"  cols="20" rows="5" placeholder="Write your message here."></textarea>
+                </div>
+                
+                
+                <input type="submit" value="Submit" id="submit">
 
             </form>
 
@@ -62,6 +87,6 @@
     </div>
 
 </body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js."></script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js."></script> -->
 
 </html>
